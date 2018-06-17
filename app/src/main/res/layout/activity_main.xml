@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="19dp"
+        android:layout_above="@+id/label_spinner"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-35dp"
+        android:text="@string/catagory"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Spinner
+        android:id="@+id/label_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="35dp"
+        android:prompt="@string/spinner_title"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="35dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/rgText"
+        android:layout_width="52dp"
+        android:layout_height="22dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="233dp"
+        android:layout_toStartOf="@+id/radioGroup"
+        android:text="@string/type"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="82dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="129dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="184dp">
+
+        <RadioButton
+            android:id="@+id/credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credit"/>
+
+        <RadioButton
+            android:id="@+id/debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/debit"/>
+
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/txtamount"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_alignBaseline="@+id/editText_main"
+        android:layout_toStartOf="@+id/radioGroup"
+        android:text="@string/amount"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/editText_main"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/radioGroup"
+        android:layout_marginTop="139dp"
+        android:hint="@string/editText"
+        android:inputType="phone"
+        android:maxLength="5"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="103dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="153dp"
+        android:layout_marginEnd="68dp"
+        android:text="@string/submit"
+        tools:layout_editor_absoluteX="219dp"
+        tools:layout_editor_absoluteY="296dp"/>
+</RelativeLayout>

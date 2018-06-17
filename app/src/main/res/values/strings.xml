@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CashFlow</string>
+    <string name="credit">Credit</string>
+    <string name="debit">Debit</string>
+    <string name="submit">Submit</string>
+    <string name="spinner_title">Select Category</string>
+    <string name="catagory">Customers:</string>
+    <string name="type">Type:</string>
+    <string name="editText">Rs.</string>
+    <string name="amount">Amount:</string>
+    <string name="table">table</string>
+
+
+
+</resources>
